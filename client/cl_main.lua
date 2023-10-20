@@ -19,9 +19,9 @@ RegisterNetEvent('CFW:Shared:Ready', function()
         StartComponent()
     else
         -- If there not availiable then lets present an error to the console showing which are missing
-        print('[^9CRITICAL^7] [Apartments] Failed to load resource "'..GetCurrentResourceName()..'" required CloudzFW Component dependencies were not found')
+        print('[^9CRITICAL^7] ['..CoreResource..'] Failed to load resource "'..GetCurrentResourceName()..'" required CloudzFW Component dependencies were not found')
         for k, v  in pairs(depsErrors) do
-            print('[^9CRITICAL^7] [Apartments] [Error #'..k..'] '..v)
+            print('[^9CRITICAL^7] ['..CoreResource..'] [Error #'..k..'] '..v)
         end
     end
 end)
