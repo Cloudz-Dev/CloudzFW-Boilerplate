@@ -19,9 +19,7 @@ RegisterNetEvent('CFW:Shared:Ready', function()
         YourComponentName = exports[CoreResource]:Fetch(ComponentName)
         Fetch = exports[CoreResource]:Fetch('Fetch')
         Notifications = exports[CoreResource]:Fetch('Notifications')
-
-        if not IsLoaded then return end
-        IsLoaded = true
+        StartComponent()
     else
         -- If there not availiable then lets present an error to the console showing which are missing
         print('[^9CRITICAL^7] [Apartments] Failed to load resource "'..GetCurrentResourceName()..'" required CloudzFW Component dependencies were not found')

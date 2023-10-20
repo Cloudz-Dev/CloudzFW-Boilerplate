@@ -26,12 +26,12 @@ function CharacterLogin()
 end
 
 RegisterNetEvent('CFW:Shared:CharacterLogin', function()
-    -- The Character has logged into there character to a point there in full control of there character
+    -- DO NOT EDIT
     IsLoggedIn = true
     CharacterLogin()
 end)
 
 RegisterNetEvent('CFW:Shared:CharacterLogout', function()
-    -- The player has logged out of there character by a means of a successful logout, this DOES NOT include crashes or on spot exits
+    -- DO NOT EDIT
     IsLoggedIn = false
 end)
