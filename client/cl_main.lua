@@ -4,7 +4,7 @@ RegisterNetEvent('CFW:Shared:Ready', function()
     local depsLoaded, depsErrors = exports[CoreResource]:DepCheck({ 
         "Utils", 
         "Logger", 
-        "Apartments", 
+        "YourComponentName", 
         "Notifications", 
         "Fetch" 
     }
